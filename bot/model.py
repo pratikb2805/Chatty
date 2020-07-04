@@ -1,8 +1,8 @@
 import os, sys
 from wit import Wit
-sys.path.insert(0, '/media/pratik/Programs/devops/webd/projects/chatbot/bot')
+sys.path.insert(0,'/media/pratik/Programs/devops/webd/projects/chatbot/bot/')
 
-from utils import *
+import utils
 
 
 class Bot(Wit):

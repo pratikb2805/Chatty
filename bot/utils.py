@@ -37,4 +37,3 @@ def get_wikidata(search_query):
     except:
         return f"Sorry, I couldn't find anything about {search_query}" 
 
-
