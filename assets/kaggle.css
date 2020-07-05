@@ -6,7 +6,7 @@
     margin-bottom:10px;
     border-radius: 5px;
     height: 90%;
-    width:70%;
+    width:60%;
 }
 .header{
     width: 100%;
@@ -47,7 +47,7 @@
     clear: both;
     position: fixed;
     bottom:0px;
-    width: 40%;
+    width: 100%;
     height: 60px;
     overflow-y:visible;
     margin-top: 50px;
@@ -119,7 +119,9 @@ body{
 }
 .msgbox{
     word-wrap: break-word;
+    border: 2px solid black;
     outline-offset: 5px;
+    border-radius:5px;
     line-height: 50px;
     overflow-y: scroll;
     height: 100%;

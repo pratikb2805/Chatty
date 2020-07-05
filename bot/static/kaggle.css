@@ -1,146 +1,208 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-.container{
-    margin-top:20px;
-    margin-bottom:10px;
+.container{  
+    top:5px;
     border-radius: 5px;
-    height: 90%;
-    width:70%;
+    height: 100%;
+    width:40%;
+    min-width:500px;
 }
 .header{
+    background-color: #21375b;
     width: 100%;
-    height: 50px;
-    margin-top: 50px;
-    position: relative;
+    height: 60px;
+    display: flex;
     text-align: left;
-    border-radius:12px;
+    border-radius:15px;
     border:solid gray 1px;
-    background: #b92b27; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b92b27, #1565c0); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b92b27, #1565c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: cornsilk;
+    color: white;
     margin: auto;
-
+    margin-top: 5px;
+    text-align: left!important;
+    
+    
 }
 .text-left{
-    padding-top: 4px;
-    position: fixed;
-    left: auto;
-  
+    text-align: left!important;
+    float: left!important;
     font-family: 'MuseoModerno', cursive;
+    margin-top:10px;
 
-    margin-top:5px;
-    margin-left: 2px;  
+    
 }
 .header-img{
-    margin-top:5px;
+    margin-top:9px;
     margin-bottom:5px;
     vertical-align: middle;
     margin-left:0px;
     width:40px;
     margin-right: 2px;
     height: 40px;
+    float: center;
     border-radius:20px;
 }
-.footer{
-    clear: both;
-    position: fixed;
-    bottom:0px;
-    width: 40%;
-    height: 60px;
-    overflow-y:visible;
-    margin-top: 50px;
-}
 
-#msg{
-    width: 85%;
-    height: 60px;
-    border: 1px gray solid;
-}
-#msg:hover{
-    border: darkturquoise solid 2px;
-
-}
-#send{
-    background-color: blanchedalmond;
-    width: 15%;
-    height: 60px;
-    opacity: 1;
-    border: 1px gray solid;
-}
-#send:hover{
-    filter: invert(1.0);
-    background-color: orange;
-    border-inline: none;
-}
 body{
     height: 100%;
+    overflow-y: hidden;
 }
-.sent{
-    
+.sent{   
     float: right;
     vertical-align: center;
     margin-right: 10px;
-    font-size:25px;
-    background-color: rgb(207,233,186);
-    color:black;
+    background-color: #08142b;
+    color:white;
+    border-radius: 5px 0px 5px 5px; 
+}
+
+.recieved::after{
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-right-color: white;
+    border-left:0;
+    top:0%;
+    right: calc(100% - 5px);
+    margin-left:-53%;
+    border-left:0;
+    border-top: 0;
+    outline-color: #08142b;
+
+}
+.sent::after{
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-left-color: #08142b;
+    border-right:0;
+    top:0%;
+    left: calc(100% - 5px);
+    margin-right: 0;
+    border-right:0;
+    border-top: 0;
+    outline-color: #08142b;
 
 }
 .recieved{
     float: left;
-    vertical-align: center;
+    border-radius: 0px 5px 5px 5px;
     margin-right: 10px;
-    font-size:25px;
+    padding-bottom: 0;
+    box-shadow: #000000;
+    font-weight: bold;
     background-color: white;
-    color:black;}
+    color:black;
+}
 
 .message{
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-
+    box-shadow: 0 1px 6px gray, 0 1px 4px gray;
+    font-size: 15px;
+    font-weight: bold;
     position: fixed;
     display: inline-block;
     position: relative;
-    line-height: 35px;
-    margin-bottom: 10px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top:4px;
+    text-align: justify;
+    margin-left:8px;
+    margin-right:10px;
     min-height: 20px;
     clear:both;
     font-family: 'Open Sans', sans-serif;
     height: auto;
-    max-width: 75%;
-    border-radius: 15px;
+    max-width: 60%;
+    
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
     padding-top:5px;
     vertical-align:center;
-    text-decoration-style: double;
     
 }
+
 .msgbox{
+    background-image: url('https://cutewallpaper.org/21/whatsapp-background-wallpapers/Whatsapp-background-wallpaper-android-3-A-Background-Download.jpg');
     word-wrap: break-word;
+    
+    box-sizing: border-box;
+    inset: 10px;
+    border-style: inset;
+    border: 1px solid gray;
     outline-offset: 5px;
+    border-radius:10px;
     line-height: 50px;
     overflow-y: scroll;
-    height: 100%;
+    height: 80%;
+    margin-bottom: 10px;
     margin-top:10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left:15px;
+
+}
+.msgbox::before{
+    box-shadow: 0px 0px 10px rgba(0, 0. 0, 0);
+    z-index:3;
+    content: "";
+    height: 50px;
+    position: fixed;
 }
 body {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    overflow: hidden; /* Hide scrollbars */
+    
     user-select: none;
-    height: 90vh;
-  }
-
-  .msgbox::-webkit-scrollbar {
+    overflow-y: hidden;
+    height: 100vh;
+}
+.msgbox::-webkit-scrollbar {
     display: none;
 }
-.message:hover{
-    border: 1px solid black;
-    
+
+#msg:hover{
+    border:solid 1px gray;
 }
 
-.form-control{
+#msg{
+    margin-left: 5px;
+    width: calc(95% - 60px);
+    border-radius: 30px;
+    height: 60px;
+    border: 1px gray solid;
+}
+#msg:hover{
+    border: gray solid 2px;
+
+}
+#send{
+    background-color: blanchedalmond;
+    width: 60px;
+    margin-left: 7px;
+    height: 60px;
+    float: right;
+    opacity: 1;
+    border-radius: 30px;
+    border: 1px gray solid;
+}
+#send:hover{
+    filter: invert(1.0);
+    background-color: orange;
+
+}
+.footer{
+    float: bottom;
+    position: relative;
+    width:100%;
+    z-index: 2;
+    margin-left: calc(2.5% - 5px);
+
+
+}
+#msgbox:click{
     border:none;
+}
+#msgbox:active{
+    border:none;
+
 }
