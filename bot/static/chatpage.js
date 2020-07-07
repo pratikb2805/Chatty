@@ -29,6 +29,7 @@ function getResponse(message){
         success: function(response){
             resp = response.response;
             receieveMsg(resp);
+            $('.msgbox').scrollTop($('.msgbox').height());
         }
     })
 
