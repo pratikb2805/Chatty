@@ -2,8 +2,7 @@ import os, sys
 from wit import Wit
 sys.path.insert(0,'/media/pratik/Programs/devops/webd/projects/chatbot/bot/')
 
-import utils
-
+from utils import *
 
 class Bot(Wit):
     def __init__(self, access_token = 'OTZ4HIQAX47G7YGIXS43IQ6C5DL5DIZG', name = "Chatty", userName = "User"):
