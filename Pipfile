@@ -1,0 +1,11 @@
+[[source]]
+url = "https://dashboard.heroku.com/apps/chatter-by-pratikbedre"
+verify_ssl = true
+name = "chatter"
+
+['pyowm', 'django', 'pywit']
+requests = "*"
+
+
+[dev-packages]
+pytest = "*"
