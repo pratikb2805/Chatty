@@ -1,0 +1,3 @@
+pywit
+django
+pyowm
